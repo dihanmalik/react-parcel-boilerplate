@@ -6,7 +6,9 @@
   "author": "dihanmalik <abdulmaliknahid@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/preset-env": "^7.9.6",
     "axios": "^0.19.2",
+    "babel-plugin-module-resolver": "^4.0.0",
     "re-reselect": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
