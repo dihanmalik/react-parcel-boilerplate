@@ -1,0 +1,14 @@
+@use 'sass:color';
+
+$primary-color: #03a9f4;
+$secondary-color: #4caf50;
+$accent-color: #e91e63;
+
+$info-color: #03a9f4;
+$success-color: #4caf50;
+$warning-color: #ffb300;
+$error-color: #f44336;
+
+$background-white: #ffffff;
+$background-dark: color.adjust($background-white, $lightness: -20%);
+$white: #ffffff;

@@ -1,0 +1,17 @@
+@import './atom/Button';
+@import './atom/LinkButton.scss';
+
+body {
+  margin: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  &:active, &:visited {
+    color: inherit;
+  }
+}

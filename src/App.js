@@ -4,13 +4,17 @@ import useProviderProps from '@hooks/useProviderProps'
 
 import Routes from './screen'
 
+import './styles/index.scss'
+
 const App = () => {
   const providerProps = useProviderProps()
   return (
     <Provider {...providerProps}>
-      <Suspense fallback={<h3>Loading screen...</h3>}>
-        <Routes />
-      </Suspense>
+      <React.Fragment>
+        <Suspense fallback={<h3>Loading screen...</h3>}>
+          <Routes />
+        </Suspense>
+      </React.Fragment>
     </Provider>
   )
 }

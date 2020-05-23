@@ -1,0 +1,11 @@
+@import './Button';
+@import '../theme';
+
+.link-button{
+  @extend .button;
+  background-color: $primary-color;
+
+  &.__active {
+    background-color: $secondary-color;
+  }
+}
