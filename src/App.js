@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import Provider from './Provider'
 import useProviderProps from '@hooks/useProviderProps'
 
-import Routes from './screen/Routes'
+import Routes from './screen'
 
 const App = () => {
   const providerProps = useProviderProps()
