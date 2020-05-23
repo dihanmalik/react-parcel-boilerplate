@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, not dead"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        "alias": {
+          "@src": "./src",
+          "@core": "./src/core",
+          "@atom": "./src/components/atom",
+          "@molecules": "./src/components/molecules",
+          "@utils": "./src/core/utils",
+          "@screen": "./src/screen",
+          "@hooks": "./src/hooks"
+        }
+      }
+    ]
+  ]
+}
