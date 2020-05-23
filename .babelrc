@@ -18,7 +18,9 @@
           "@molecules": "./src/components/molecules",
           "@utils": "./src/core/utils",
           "@screen": "./src/screen",
-          "@hooks": "./src/hooks"
+          "@hooks": "./src/hooks",
+          "@compound": "./src/components/compound",
+          "@styles": "./src/styles"
         }
       }
     ]

@@ -22,6 +22,12 @@
       ],
       "@hooks/*": [
         "./src/hooks/*"
+      ],
+      "@compund/*": [
+        "./src/components/compound"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
       ]
     }
   }
