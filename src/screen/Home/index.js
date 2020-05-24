@@ -10,9 +10,7 @@ const Home = ({ logout }) => {
     <div>
       <h1>THIS IS HOME</h1>
       <Link to="/todos">Go to Todos</Link>
-      <Button onClick={logout}>
-        <h3>Logout</h3>
-      </Button>
+      <Button onClick={logout} label="Logout" />
     </div>
   )
 }
