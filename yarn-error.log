@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /Users/invento-macbook-pro-1/.yarn/bin/yarn.js add @compund/NavBar
+  /usr/local/bin/node /Users/invento-macbook-pro-1/.yarn/bin/yarn.js add @stytles/screen
 
 PATH: 
-  /var/folders/qp/d1kl7jbs70gg786k3nbg1v9m0000gn/T/yarn--1590248798234-0.10995958146527784:/Users/invento-macbook-pro-1/Documents/MyWorks/github-repos/react-parcel-boilerplate/node_modules/.bin:/Users/invento-macbook-pro-1/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/Users/invento-macbook-pro-1/.yarn/bin:/Users/invento-macbook-pro-1/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/invento-macbook-pro-1/.yarn/bin:/Users/invento-macbook-pro-1/.config/yarn/global/node_modules/.bin
+  /var/folders/qp/d1kl7jbs70gg786k3nbg1v9m0000gn/T/yarn--1590295316310-0.11337157039806844:/Users/invento-macbook-pro-1/Documents/MyWorks/github-repos/react-parcel-boilerplate/node_modules/.bin:/Users/invento-macbook-pro-1/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/Users/invento-macbook-pro-1/.yarn/bin:/Users/invento-macbook-pro-1/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/invento-macbook-pro-1/.yarn/bin:/Users/invento-macbook-pro-1/.config/yarn/global/node_modules/.bin
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@compund%2fNavBar: Not found
+  Error: https://registry.yarnpkg.com/@stytles%2fscreen: Not found
       at Request.params.callback [as _callback] (/Users/invento-macbook-pro-1/.yarn/lib/cli.js:66987:18)
       at Request.self.callback (/Users/invento-macbook-pro-1/.yarn/lib/cli.js:140748:22)
       at Request.emit (events.js:223:5)
@@ -38,11 +38,14 @@ npm manifest:
       "start": "rimraf .cache build && NODE_ENV=development parcel src/index.html -d build"
     },
     "dependencies": {
-      "@redux-requests/axios": "^0.9.0",
-      "@redux-requests/core": "^0.29.0",
+      "@redux-requests/axios": "^0.9.1",
+      "@redux-requests/core": "^0.29.1",
+      "@redux-requests/mock": "^0.3.1",
       "axios": "^0.19.2",
+      "classnames": "^2.2.6",
       "connected-react-router": "^6.8.0",
       "history": "^4.10.1",
+      "ramda": "^0.27.0",
       "re-reselect": "^4.0.0",
       "react": "^16.13.1",
       "react-dom": "^16.13.1",
@@ -813,18 +816,23 @@ Lockfile:
       lodash "^4.17.13"
       to-fast-properties "^2.0.0"
   
-  "@redux-requests/axios@^0.9.0":
-    version "0.9.0"
-    resolved "https://registry.yarnpkg.com/@redux-requests/axios/-/axios-0.9.0.tgz#963af2ab0311cc85bfc9d2883dd16027a0627322"
-    integrity sha512-aSwjdtvRu0M6M81Q3zmME5WKKYd7Knt79lzG/PIAxLQA1RMsGcsSlJ+eHNpolQNAScpeqEquMTnS2B6R3AydIg==
+  "@redux-requests/axios@^0.9.1":
+    version "0.9.1"
+    resolved "https://registry.yarnpkg.com/@redux-requests/axios/-/axios-0.9.1.tgz#737892ff5a014d38488c3f7403461d410758e97a"
+    integrity sha512-0VuP34e+1wUp0eZ85Dshn4THRsnYA7SOm3rD7EnjTXPcUltNLp3FOLUTyFLNwYK52OAOFTuerGVxkoqhUaZgTg==
   
-  "@redux-requests/core@^0.29.0":
-    version "0.29.0"
-    resolved "https://registry.yarnpkg.com/@redux-requests/core/-/core-0.29.0.tgz#4232eb37555ca56822920fa264db780a3560b04f"
-    integrity sha512-VHvAQb3PhKc3nb6ycFg1RyyhvLVnEnjbeJO8oY0oWygalLjYiBokBnly7sArsCJEDYUcNrDZPQYDgsxekKj8WQ==
+  "@redux-requests/core@^0.29.1":
+    version "0.29.1"
+    resolved "https://registry.yarnpkg.com/@redux-requests/core/-/core-0.29.1.tgz#bbe846a64e9875b64d8d116c848df127bb21638f"
+    integrity sha512-ih5kdDPMEzYixVLQHnDjZPc6/KakJci6Tbj1BjDL16iidsRaXBpWwYzSoe8CBfIOZKlWGcc7rrE852ceLbIdTQ==
     dependencies:
       "@babel/runtime" "^7.2.0"
       deepmerge "^4.0.0"
+  
+  "@redux-requests/mock@^0.3.1":
+    version "0.3.1"
+    resolved "https://registry.yarnpkg.com/@redux-requests/mock/-/mock-0.3.1.tgz#6457343b20bff5f2ab66ebcda5b00ed1d9790d71"
+    integrity sha512-lTFqP5R/4bWILBIfBed1BIo5g74rdFGfcKdYiqHODv9n15pHlpm1hmLzYlWlWg4CTzMcVG3BdCHzU284U/ZLMQ==
   
   ansi-styles@^3.2.1:
     version "3.2.1"
@@ -929,6 +937,11 @@ Lockfile:
       readdirp "~3.4.0"
     optionalDependencies:
       fsevents "~2.1.2"
+  
+  classnames@^2.2.6:
+    version "2.2.6"
+    resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+    integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
   
   color-convert@^1.9.0:
     version "1.9.3"
@@ -1404,6 +1417,11 @@ Lockfile:
       loose-envify "^1.4.0"
       object-assign "^4.1.1"
       react-is "^16.8.1"
+  
+  ramda@^0.27.0:
+    version "0.27.0"
+    resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.0.tgz#915dc29865c0800bf3f69b8fd6c279898b59de43"
+    integrity sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
   
   re-reselect@^4.0.0:
     version "4.0.0"

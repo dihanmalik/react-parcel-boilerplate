@@ -743,18 +743,23 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@redux-requests/axios@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@redux-requests/axios/-/axios-0.9.0.tgz#963af2ab0311cc85bfc9d2883dd16027a0627322"
-  integrity sha512-aSwjdtvRu0M6M81Q3zmME5WKKYd7Knt79lzG/PIAxLQA1RMsGcsSlJ+eHNpolQNAScpeqEquMTnS2B6R3AydIg==
+"@redux-requests/axios@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redux-requests/axios/-/axios-0.9.1.tgz#737892ff5a014d38488c3f7403461d410758e97a"
+  integrity sha512-0VuP34e+1wUp0eZ85Dshn4THRsnYA7SOm3rD7EnjTXPcUltNLp3FOLUTyFLNwYK52OAOFTuerGVxkoqhUaZgTg==
 
-"@redux-requests/core@^0.29.0":
-  version "0.29.0"
-  resolved "https://registry.yarnpkg.com/@redux-requests/core/-/core-0.29.0.tgz#4232eb37555ca56822920fa264db780a3560b04f"
-  integrity sha512-VHvAQb3PhKc3nb6ycFg1RyyhvLVnEnjbeJO8oY0oWygalLjYiBokBnly7sArsCJEDYUcNrDZPQYDgsxekKj8WQ==
+"@redux-requests/core@^0.29.1":
+  version "0.29.1"
+  resolved "https://registry.yarnpkg.com/@redux-requests/core/-/core-0.29.1.tgz#bbe846a64e9875b64d8d116c848df127bb21638f"
+  integrity sha512-ih5kdDPMEzYixVLQHnDjZPc6/KakJci6Tbj1BjDL16iidsRaXBpWwYzSoe8CBfIOZKlWGcc7rrE852ceLbIdTQ==
   dependencies:
     "@babel/runtime" "^7.2.0"
     deepmerge "^4.0.0"
+
+"@redux-requests/mock@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@redux-requests/mock/-/mock-0.3.1.tgz#6457343b20bff5f2ab66ebcda5b00ed1d9790d71"
+  integrity sha512-lTFqP5R/4bWILBIfBed1BIo5g74rdFGfcKdYiqHODv9n15pHlpm1hmLzYlWlWg4CTzMcVG3BdCHzU284U/ZLMQ==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -1359,6 +1364,13 @@ react-dom@^16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.19.1"
+
+react-feather@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.8.tgz#455baf1470f756a57e2ad6c72545444ce5925781"
+  integrity sha512-J0dCEOvOxpovHeOVj3+8mAhN3/UERTfX6rSxnV6x4E+0s+STY536jhSjRfpSvTQA0SSFjYr4KrpPfdsLmK+zZg==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.9.0:
   version "16.13.1"
