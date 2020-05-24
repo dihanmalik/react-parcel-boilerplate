@@ -1,26 +1,63 @@
 @import '../theme';
+@import '../mixin';
+
+$outlined: false;
+
 
 .button {
-  height: 50;
-  min-width: 120px;
-  background-color: $primary-color;
+  height: 35px;
+  min-width: 100px;
+  padding: 5px 15px;
   border: none;
   margin: 1px;
   outline: none;
   cursor: pointer;
+  border-radius: 2.5px;
+  border-width: 0.1em;
+  border-style: solid;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: $white;
+  @include flex-view(row, center, center, null);
+
+  &.outlined__button {
+    color: $primary-color;
+  }
+
+
 
   &.success__button {
     background-color: $success-color;
+    border-color: $success-color;
+    color: $success-color;
   }
   &.error__button {
     background-color: $error-color;
+    border-color: $error-color;
+    color: $error-color;
   }
   &.warning__button {
     background-color: $warning-color;
+    border-color: $warning-color;
+    color: $warning-color;
   }
 
-  __text {
-    color: inherit;
+  &.outlined__button {
+    background-color: transparent;
   }
+
+  &__text {
+    color: inherit;
+    font-size: 14px;
+  }
+
+  &__icon-loader {
+    animation: spinner 5s linear infinite;
+    margin-inline-end: 5px;
+  }
+
+  &__icon {
+    margin-inline-end: 5px;
+  }
+
 }

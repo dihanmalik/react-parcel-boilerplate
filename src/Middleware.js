@@ -5,6 +5,6 @@ import { routingMiddleware } from '@core/routing'
 
 const composeEnhancer = composeWithDevTools({ maxAge: 500 })
 
-export default composeEnhancer(
-  applyMiddleware(routingMiddleware)
+export default (requestsMiddleware) => composeEnhancer(
+  applyMiddleware(routingMiddleware, ...requestsMiddleware)
 )

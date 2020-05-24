@@ -12,3 +12,6 @@ $error-color: #f44336;
 $background-white: #ffffff;
 $background-dark: color.adjust($background-white, $lightness: -20%);
 $white: #ffffff;
+$black: #000000;
+
+$card-border-color: color.adjust($white, $lightness: -30%);

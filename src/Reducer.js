@@ -4,10 +4,9 @@ import sessionReducer from '@core/session/Reducer'
 import todosReducer from '@core/todos/Reducer'
 import { routerReducer } from '@core/routing'
 
-const combinedReducers = combineReducers({
+export default ({ requestsReducer }) => combineReducers({
   [todosReducer.key]: todosReducer,
   [sessionReducer.key]: sessionReducer,
+  requests: requestsReducer,
   router: routerReducer
 })
-
-export default combinedReducers
