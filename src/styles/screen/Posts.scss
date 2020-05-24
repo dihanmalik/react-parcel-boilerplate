@@ -1,0 +1,43 @@
+@import '../theme';
+@import '../mixin';
+
+.c-postlist {
+  &__item {
+    margin: 10px 0px;
+    border: 1px solid $card-border-color;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__body {
+    margin-bottom: 10px;
+  }
+
+  &__action-container {
+    @include flex-view(row, flex-end, center);
+  }
+
+  &__title-input {
+    height: 30px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__body-input {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    min-width: 400px;
+    font-size: 15px;
+    height: 100px;
+  }
+}

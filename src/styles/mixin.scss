@@ -1,0 +1,11 @@
+@mixin flex-view ($direction: column, $justify, $align, $flex: 1 ) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+
+  @if $flex {
+    flex: $flex;
+  }
+
+}
